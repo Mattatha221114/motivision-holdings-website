@@ -293,7 +293,6 @@ p:last-child{ margin-bottom: 0; }
   display: block;
   width: 100%;
   height: auto;
-  max-height: 420px;
   object-fit: contain;
   object-position: center;
   border: 1.5px solid var(--line);
@@ -301,7 +300,13 @@ p:last-child{ margin-bottom: 0; }
 }
 @media (max-width: 640px){
   .hero{ padding-bottom: 26px; }
-  .hero-visual img{ max-height: 260px; object-position: center; }
+
+  .hero-visual img{
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
   .hero-grid{ gap: 14px; }
   .hero-copy h1{ margin-bottom: 8px; }
   .hero-lede{ margin-bottom: 16px; }
